@@ -12,6 +12,7 @@ public class GameManager {
             System.out.println(h1.getClass().getSimpleName() + " kick " + h2.getClass().getSimpleName() + "-");
             h1.kick(h2);
             System.out.println(h2.getClass().getSimpleName() + " kick " + h1.getClass().getSimpleName() + "-");
+            h2.kick(h1);
 
             System.out.println("--------------------------------------------");
         }
