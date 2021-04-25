@@ -1,5 +1,6 @@
 package java_basic_course.day_22_04_2021.task2;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
