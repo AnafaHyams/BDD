@@ -17,7 +17,7 @@ public class HttpCodeHandler {
 
         try {
             System.out.println("For Http code " + httpCode + ":");
-            HttpCodes.findByDbCode(httpCode).printExplanationCode();
+            HttpCodes.findByDbCode(httpCode).doCode();
         } catch (IllegalStateException e) {
             System.out.println(e);
         }
