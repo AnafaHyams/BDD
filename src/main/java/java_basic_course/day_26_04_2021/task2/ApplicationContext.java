@@ -13,6 +13,7 @@ public class ApplicationContext {
 
     public Object getObject(Class type) {
         Object aClass;
+
         if(typesAnnotatedWith.contains(type)){
             aClass = handleSingletonAnnotation(type);
         }

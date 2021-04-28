@@ -38,7 +38,6 @@ public class ObjectFactory {
         T t = create(type);
         configure(t);
 
-
         return t;
     }
 
@@ -55,8 +54,10 @@ public class ObjectFactory {
     private <T> Class<T> resolveRealImpl(Class<T> type) {
         if (type.isInterface()) {
             Class<T> implClass = config.getImplClass(type);
+
             if (implClass == null) {
                 Set<Class<? extends T>> classes = scanner.getSubTypesOf(type);
+
                 if (classes.size() != 1) {
                     throw new IllegalStateException("0 or more than one impl found for type " + type);
                 }
@@ -65,6 +66,7 @@ public class ObjectFactory {
                 type = implClass;
             }
         }
+
         return type;
     }
 
