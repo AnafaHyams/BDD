@@ -5,7 +5,7 @@ import java.io.Serializable;
 public enum Status implements Serializable {
     SHORT(1, 10, "Short"),
     MEDIUM(11, 20, "Medium"),
-    LONG(21, 100, "Long");
+    LONG(21, Integer.MAX_VALUE, "Long");
 
     private final int dbMinCode;
     private final int dbMaxCode;
