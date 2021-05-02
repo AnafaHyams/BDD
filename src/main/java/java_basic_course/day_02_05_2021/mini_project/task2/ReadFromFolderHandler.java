@@ -1,4 +1,5 @@
 package java_basic_course.day_02_05_2021.mini_project.task2;
+
 import java_basic_course.day_02_05_2021.mini_project.Utilities.ConstUtilities;
 import java_basic_course.day_02_05_2021.mini_project.task1.Quote;
 

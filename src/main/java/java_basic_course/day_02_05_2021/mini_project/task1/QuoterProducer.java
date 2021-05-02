@@ -1,6 +1,5 @@
 package java_basic_course.day_02_05_2021.mini_project.task1;
 
-
 import java_basic_course.day_02_05_2021.mini_project.Utilities.RandomUtil;
 
 import java.util.List;
