@@ -1,0 +1,15 @@
+package java_basic_course.day_02_05_2021.mini_project.task1;
+
+public class Main {
+
+    public static void main(String[] args) {
+        QuoterProducer quoterProducer = new QuoterProducer();
+
+        Quote quote = quoterProducer.getRandomQuote();
+        System.out.println(quote);
+        WriteToFolderHandler.writeObject(quote);
+    }
+
+
+
+}
