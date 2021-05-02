@@ -13,24 +13,30 @@ import java.util.List;
 
 public class WriteToFolderHandler {
 
-    private static final String DIR_PATH = "c:\\mini_project_files";
-    private static final String END_FILE_PATH_FORMAT = ".txt";
+    private static String dirPath;
+    private static String endFilePathFormat;
 
     @SneakyThrows
-    public static void writeObject(Quote quote){
+    public static void writeObject(Object quote, String dir, String endFileFormat){
+        setPaths(dir,endFileFormat);
         createDirectory();
         makeFileHandler(quote);
     }
 
+    private static void setPaths(String dir, String endFileFormat) {
+        dirPath = dir;
+        endFilePathFormat = endFileFormat;
+    }
+
     private static void createDirectory() {
-        File dir = new File(DIR_PATH);
+        File dir = new File(dirPath);
 
         if (!dir.exists()){
             dir.mkdirs();
         }
     }
 
-    private static void makeFileHandler(Quote quote) throws IOException {
+    private static void makeFileHandler(Object quote) throws IOException {
         File file = getCreatedFile();
         writeToFile(quote, file);
     }
@@ -45,10 +51,10 @@ public class WriteToFolderHandler {
 
     private static String createFilePath() {
         String fileName = getFileNameFromDate();
-        return DIR_PATH + "\\" + fileName + END_FILE_PATH_FORMAT;
+        return dirPath + "\\" + fileName + endFilePathFormat;
     }
 
-    private static void writeToFile(Quote quote, File file) throws IOException {
+    private static void writeToFile(Object quote, File file) throws IOException {
         FileOutputStream fos = new FileOutputStream(file);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
