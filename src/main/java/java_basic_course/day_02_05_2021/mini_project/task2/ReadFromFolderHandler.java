@@ -1,4 +1,5 @@
 package java_basic_course.day_02_05_2021.mini_project.task2;
+import java_basic_course.day_02_05_2021.mini_project.task1.ConstUtilities;
 import java_basic_course.day_02_05_2021.mini_project.task1.Quote;
 
 import lombok.SneakyThrows;
@@ -11,11 +12,9 @@ import java.util.List;
 
 public class ReadFromFolderHandler {
 
-    private static final String SOURCE_DIR_PATH = "c:\\mini_project_files";
-
     @SneakyThrows
     public static List<Quote> readObjects(){
-        File dir = new File(SOURCE_DIR_PATH);
+        File dir = new File(ConstUtilities.OBJECTS_DIR_PATH);
         List<Quote> quotesList = new ArrayList<>();
 
         if (dir.exists()){

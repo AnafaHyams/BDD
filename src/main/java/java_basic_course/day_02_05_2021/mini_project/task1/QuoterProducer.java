@@ -4,10 +4,9 @@ package java_basic_course.day_02_05_2021.mini_project.task1;
 import java.util.List;
 
 public class QuoterProducer {
-    private int id = 0;
 
     public Quote getRandomQuote() {
-        id++;
+        long id = System.nanoTime();
         String text = createRandomText();
 
         return new Quote(id, text, getStatusTextObject(text));

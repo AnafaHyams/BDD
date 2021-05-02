@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Quote implements Serializable {
-    private int id;
+    private long id;
     private String text;
     private Status status;
 }
