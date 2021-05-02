@@ -1,6 +1,7 @@
 package java_basic_course.day_02_05_2021.mini_project.task2;
 
-import java_basic_course.day_02_05_2021.mini_project.task1.ConstUtilities;
+import java_basic_course.day_02_05_2021.mini_project.Utilities.ConstUtilities;
+import java_basic_course.day_02_05_2021.mini_project.Utilities.JsonUtil;
 import java_basic_course.day_02_05_2021.mini_project.task1.Quote;
 import java_basic_course.day_02_05_2021.mini_project.task1.WriteToFolderHandler;
 import lombok.SneakyThrows;
@@ -15,7 +16,7 @@ public class Consumer {
         List<Quote> quotesList = ReadFromFolderHandler.readObjects();
 
         for (Quote quote : quotesList) {
-            String objectAsJson = makeJsonString(quote);
+            String objectAsJson = JsonUtil.makeJsonString(quote);
 
             //writeJsonFileToDir();
             WriteToFolderHandler.writeObject(objectAsJson, ConstUtilities.TARGET_JSON_DIR_PATH, ConstUtilities.END_JSON_FILE_PATH_FORMAT);
@@ -27,12 +28,5 @@ public class Consumer {
 
     private static void delayXSec() throws InterruptedException {
         TimeUnit.SECONDS.sleep(ConstUtilities.DELAY_TIME_IN_SECONDS);
-    }
-
-    private static String makeJsonString(Quote quote) {
-        String objectAsJson = JsonMapper.convertToJson(quote);
-        System.out.println(objectAsJson);
-
-        return objectAsJson;
     }
 }

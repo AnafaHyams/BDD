@@ -1,4 +1,4 @@
-package java_basic_course.day_02_05_2021.mini_project.task1;
+package java_basic_course.day_02_05_2021.mini_project.Utilities;
 
 import java.util.List;
 import java.util.Random;
@@ -13,7 +13,7 @@ public class RandomUtil {
     }
 
 
-    public static int getNumberBetween(int min, int max) {
+    private static int getNumberBetween(int min, int max) {
         return random.nextInt(max - min) + min + 1;
     }
 }

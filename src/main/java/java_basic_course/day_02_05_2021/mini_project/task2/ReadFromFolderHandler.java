@@ -1,5 +1,5 @@
 package java_basic_course.day_02_05_2021.mini_project.task2;
-import java_basic_course.day_02_05_2021.mini_project.task1.ConstUtilities;
+import java_basic_course.day_02_05_2021.mini_project.Utilities.ConstUtilities;
 import java_basic_course.day_02_05_2021.mini_project.task1.Quote;
 
 import lombok.SneakyThrows;
@@ -25,20 +25,18 @@ public class ReadFromFolderHandler {
                     FileInputStream fis = new FileInputStream(file);
                     ObjectInputStream oos = new ObjectInputStream(fis);
 
-
                     List listOfObjects = (List) oos.readObject();
 
                     Object object = listOfObjects.get(0);
-                    //for (Object object : listOfObjects) {
-                        if (object instanceof Quote) {
-                            Quote quote = (Quote) object;
-                            System.out.println(quote);
 
-                            quotesList.add(quote);
+                    if (object instanceof Quote) {
+                        Quote quote = (Quote) object;
 
-                        }
-                   // }
+                        quotesList.add(quote);
+                    }
 
+                    fis.close();
+                    oos.close();
                 }
             }
         }

@@ -1,4 +1,4 @@
-package java_basic_course.day_02_05_2021.mini_project.task1;
+package java_basic_course.day_02_05_2021.mini_project.Utilities;
 
 public class ConstUtilities {
     public static final String OBJECTS_DIR_PATH = "c:\\Mini project files";

@@ -1,6 +1,8 @@
 package java_basic_course.day_02_05_2021.mini_project.task1;
 
 
+import java_basic_course.day_02_05_2021.mini_project.Utilities.RandomUtil;
+
 import java.util.List;
 
 public class QuoterProducer {
@@ -20,9 +22,11 @@ public class QuoterProducer {
 
 
     private List<String> textSuppliers = List.of(
-            "String 1",
-            "I'm string 2",
-            "Bla bla bla bla bla bla bla.............................."
+            "The future belongs to those who believe in the beauty of their dreams",
+            "The way to get started is to quit talking and begin doing",
+            "Your time is limited, so don't waste it living someone else's life",
+            "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough",
+            "Life is what happens when you're busy making other plans"
     );
 
 
