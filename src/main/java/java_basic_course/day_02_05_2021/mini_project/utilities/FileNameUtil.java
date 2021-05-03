@@ -1,4 +1,4 @@
-package java_basic_course.day_02_05_2021.mini_project.Utilities;
+package java_basic_course.day_02_05_2021.mini_project.utilities;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

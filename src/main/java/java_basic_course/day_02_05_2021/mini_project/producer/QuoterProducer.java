@@ -1,7 +1,7 @@
-package java_basic_course.day_02_05_2021.mini_project.task1;
+package java_basic_course.day_02_05_2021.mini_project.producer;
 
-import java_basic_course.day_02_05_2021.mini_project.Resources.QuotesBucket;
-import java_basic_course.day_02_05_2021.mini_project.Utilities.RandomUtil;
+import java_basic_course.day_02_05_2021.mini_project.resources.QuotesBucket;
+import java_basic_course.day_02_05_2021.mini_project.utilities.RandomUtil;
 
 public class QuoterProducer {
 

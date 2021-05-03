@@ -1,9 +1,9 @@
-package java_basic_course.day_02_05_2021.mini_project.task2;
+package java_basic_course.day_02_05_2021.mini_project.consumer;
 
-import java_basic_course.day_02_05_2021.mini_project.Utilities.ConstUtilities;
-import java_basic_course.day_02_05_2021.mini_project.Utilities.JsonUtil;
-import java_basic_course.day_02_05_2021.mini_project.task1.Quote;
-import java_basic_course.day_02_05_2021.mini_project.task1.WriteToFolderHandler;
+import java_basic_course.day_02_05_2021.mini_project.utilities.ConstUtilities;
+import java_basic_course.day_02_05_2021.mini_project.utilities.JsonUtil;
+import java_basic_course.day_02_05_2021.mini_project.producer.Quote;
+import java_basic_course.day_02_05_2021.mini_project.producer.WriteToFolderHandler;
 
 import lombok.SneakyThrows;
 

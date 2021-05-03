@@ -1,4 +1,4 @@
-package java_basic_course.day_02_05_2021.mini_project.Resources;
+package java_basic_course.day_02_05_2021.mini_project.resources;
 
 import java.util.List;
 

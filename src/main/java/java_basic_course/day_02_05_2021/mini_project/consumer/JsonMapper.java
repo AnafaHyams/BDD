@@ -1,4 +1,4 @@
-package java_basic_course.day_02_05_2021.mini_project.task2;
+package java_basic_course.day_02_05_2021.mini_project.consumer;
 
 import lombok.SneakyThrows;
 
