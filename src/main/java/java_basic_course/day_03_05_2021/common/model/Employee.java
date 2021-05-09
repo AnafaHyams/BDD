@@ -1,4 +1,4 @@
-package java_basic_course.day_03_05_2021.StreamsLabs.lab4.model;
+package java_basic_course.day_03_05_2021.common.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

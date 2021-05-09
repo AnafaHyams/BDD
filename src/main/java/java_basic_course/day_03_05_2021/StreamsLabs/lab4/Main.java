@@ -1,6 +1,6 @@
 package java_basic_course.day_03_05_2021.StreamsLabs.lab4;
 
-import java_basic_course.day_03_05_2021.StreamsLabs.lab4.model.Employee;
+import java_basic_course.day_03_05_2021.common.model.Employee;
 import java_basic_course.day_03_05_2021.StreamsLabs.lab4.services.EmployeesStringNameCreator;
 
 import java.util.ArrayList;
