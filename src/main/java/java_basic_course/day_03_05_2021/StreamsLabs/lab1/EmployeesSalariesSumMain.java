@@ -18,10 +18,17 @@ public class EmployeesSalariesSumMain {
                 new Employee(32001),
                 new Employee(42361.4));
 
-        // Lab 1:   Page 120
-        // Result need to be 341251.67
+        double employeesSalarySum = calculateEmployeeSalarySum(employees);
+        System.out.println("Page 120: Employee salary sum: " + employeesSalarySum);
+    }
+
+    // Lab 1:   Page 120
+    // Result need to be 341251.67
+    private static double calculateEmployeeSalarySum(List<Employee> employees) {
+
         EmployeesSalariesSum employeesSalariesSum = new EmployeesSalariesSum();
         double salarySum = employeesSalariesSum.calculateSalariesSumByStream(employees);
-        System.out.println("Page 120: Employee salary sum: " + salarySum);
+
+        return salarySum;
     }
 }
