@@ -14,4 +14,5 @@ import java.io.Serializable;
 public class Employee implements Serializable {
     private static final long serialVersionUID = 452;
     private double salary;
+    private double[] salaries = new double[12];
 }
