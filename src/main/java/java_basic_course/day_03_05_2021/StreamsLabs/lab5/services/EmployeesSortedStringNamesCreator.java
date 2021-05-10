@@ -4,9 +4,7 @@ import java_basic_course.day_03_05_2021.common.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class EmployeesSortedStringNamesCreator {
     // Lab 5:   Page 153
